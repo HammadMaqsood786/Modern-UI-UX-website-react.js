@@ -5,11 +5,11 @@ import logo from "../../assets/logo.svg.png";
 
 const Menu = () => (
   <>
-    <p><a href='#home' />Home</p>
-    <p><a href='#wgpt3' />What is GPT?</p>
-    <p><a href='#possibility' />Open AI</p>
-    <p><a href='#features' />Case Studies</p>
-    <p><a href='#blog' />Library</p>
+    <p><a href='#home' >Home</a></p>
+    <p><a href='#wgpt3' >What is GPT?</a></p>
+    <p><a href='#possibility' >Open AI</a></p>
+    <p><a href='#features' >Case Studies</a></p>
+    <p><a href='#blog' >Library</a></p>
   </>
 )
 
@@ -24,11 +24,7 @@ const Navbar = () => {
           <img src={logo} alt="logo" />
         </div>
         <div className='gpt3__navbar-links_container' >
-          <p><a href="#home" />Home</p>
-          <p><a href='#wgpt3' />What is GPT?</p>
-          <p><a href='#possibility' />Open AI</p>
-          <p><a href='#features' />Case Studies</p>
-          <p><a href='#blog' />Library</p>
+          <Menu />
         </div>
       </div>
       <div className='gpt3__navbar-sign' >
@@ -44,11 +40,7 @@ const Navbar = () => {
         {toggleMenu && (
           <div className='gpt3__navbar-menu_container scale-up-center' >
             <div className='gpt3__navbar-menu-container-links' >
-              <p><a href="#home" />Home</p>
-              <p><a href='#wgpt3' />What is GPT?</p>
-              <p><a href='#possibility' />Open AI</p>
-              <p><a href='#features' />Case Studies</p>
-              <p><a href='#blog' />Library</p>
+              <Menu />
               <div className='gpt3__navbar-menu_container-links-sign' >
                 <p>Sign in</p>
                 <button type='button' >Sign up</button>
